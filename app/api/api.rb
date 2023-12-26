@@ -3,5 +3,5 @@ class API < Grape::API
   format :json
   mount Acme::Health
   mount Acme::Weather
-  add_swagger_documentation info: { title: 'grape-on-rails' }
+  add_swagger_documentation info: { title: 'weather-api' }
 end
