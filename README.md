@@ -1,16 +1,9 @@
-# Grape on Rails
-
-[![Test](https://github.com/ruby-grape/grape-on-rails/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/ruby-grape/grape-on-rails/actions/workflows/test.yml)
-[![Rubocop](https://github.com/ruby-grape/grape-on-rails/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/ruby-grape/grape-on-rails/actions/workflows/test.yml)
-[![Code Climate](https://codeclimate.com/github/ruby-grape/grape-on-rails.svg)](https://codeclimate.com/github/ruby-grape/grape-on-rails)
+# weather api
 
 A [Grape](http://github.com/ruby-grape/grape) API mounted on Rails.
 
 - [health](app/api/acme/health.rb): check status `GET` API
-- [post](app/api/acme/post.rb): post JSON data
-- [raise](app/api/acme/raise.rb): raise an error, Rails handling exceptions
-- [protected](app/api/acme/protected.rb): API protected with rudimentary Basic Authentication
-- [headers](app/api/acme/headers.rb): demonstrates header handling
+- [weather](app/api/acme/weather.rb): termerature `GET` API
 
 ## Run
 
