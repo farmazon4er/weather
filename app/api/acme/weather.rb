@@ -1,10 +1,23 @@
 module Acme
   class Weather < Grape::API
+    helpers do
+      def current_temp
+        Rails.cache.fetch("current_temp", expires_in: 15.minutes) do
+          Temperature.current.last.temperature
+        end
+      end
+
+      def historical_temp
+         Rails.cache.fetch("historical_temp", expires_in: 30.minutes) do
+          Temperature.historical.last(25).pluck(:temperature)
+        end
+      end
+    end
+
     resource :weather do
       desc 'Current temp'
       get :current do
-        temp = Temperature.current.last
-        {temperature: temp.temperature}
+        {temperature: current_temp}
       end
 
       desc 'Temp by time'
@@ -23,25 +36,24 @@ module Acme
 
       resource :historical do
         desc 'Historical temp 24 h'
-        get  do
-          {temperatures: Temperature.historical.last(25).pluck(:temperature)}
+        get do
+          { temperatures: historical_temp }
         end
 
         desc 'Historical max'
         get :max do
-          {temperature: Temperature.historical.last(25).pluck(:temperature).max }
+          { temperature: historical_temp.max }
         end
 
         desc 'Historical min'
         get :min do
-          {temperature: Temperature.historical.last(25).pluck(:temperature).min }
+          { temperature: historical_temp.min }
         end
 
         desc 'Historical average'
         get :avg do
-          ar = Temperature.historical.last(25).pluck(:temperature)
-          temperature = (ar.sum/ar.size).round(1)
-          {temperature:  temperature}
+          temperature = (historical_temp.sum/historical_temp.size).round(1)
+          { temperature:  temperature }
         end
       end
     end
