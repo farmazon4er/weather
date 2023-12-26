@@ -9,6 +9,7 @@ A [Grape](http://github.com/ruby-grape/grape) API mounted on Rails.
 
 ```
 bin/setup
+cp .env.exemple .env, add city and api key from[ https://www.accuweather.com/](https://developer.accuweather.com/)
 rspec
 rails s
 rails jobs:work
