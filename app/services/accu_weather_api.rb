@@ -20,14 +20,15 @@ class AccuWeatherAPI
     temperature = responce_json[0]["Temperature"]["Metric"]["Value"]
     epoch_time = responce_json[0]["EpochTime"]
 
-    Temperature.create!(temperature:, epoch_time:)
+    Temperature.create!(temperature:, epoch_time:, current: true)
   end
 
   def historical
     responce = connection.get("currentconditions/v1/#{city_key}/historical/24", {apikey: api_key})
     responce_json = JSON.parse(responce.body)
     attributes = []
-    responce_json.each{|r| attributes << {temperature: r["Temperature"]["Metric"]["Value"], epoch_time: r["EpochTime"]} }
+    responce_json.each{|r| attributes << {temperature: r["Temperature"]["Metric"]["Value"], epoch_time: r["EpochTime"], current: false} }
+
     Temperature.insert_all(attributes)
   end
 end

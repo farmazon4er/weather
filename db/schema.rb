@@ -17,6 +17,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_25_150221) do
   create_table "temperatures", force: :cascade do |t|
     t.float "temperature", null: false
     t.integer "epoch_time", null: false
+    t.boolean "current", default: true, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
