@@ -10,6 +10,7 @@ A [Grape](http://github.com/ruby-grape/grape) API mounted on Rails.
 ```
 bin/setup
 rails s
+rails jobs:work
 ```
 
 - Try http://localhost:3000/api/health

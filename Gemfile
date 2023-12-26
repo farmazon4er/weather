@@ -10,21 +10,20 @@ gem 'jbuilder'
 gem 'pg'
 gem 'puma', '~> 6.0'
 gem 'rails', '~> 7.0'
-# gem 'sprockets-rails'
-# gem 'stimulus-rails'
-# gem 'turbo-rails'
 gem 'dotenv-rails'
 gem 'faraday'
+gem 'rufus-scheduler'
+gem 'delayed_job_active_record'
+gem 'daemons'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry-rails'
 end
 
 group :development do
-  # gem 'appraisal'
   gem 'web-console'
-  gem 'pry-rails'
 end
 
 group :test do
