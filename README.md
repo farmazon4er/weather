@@ -3,7 +3,7 @@
 A [Grape](http://github.com/ruby-grape/grape) API mounted on Rails.
 
 - [health](app/api/acme/health.rb): check status `GET` API
-- [weather](app/api/acme/weather.rb): termerature `GET` API
+- [weather](app/api/acme/weather.rb): temperature `GET` API
 
 ## Run
 

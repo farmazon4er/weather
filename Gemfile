@@ -33,4 +33,6 @@ group :test do
   gem 'rubocop'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers', '~> 6.0'
 end
