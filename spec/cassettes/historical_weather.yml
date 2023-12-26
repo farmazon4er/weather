@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/currentconditions/v1/295863/historical/24?apikey=testapikey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.8.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Dec 2023 14:12:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '12107'
+      Connection:
+      - keep-alive
+      Request-Context:
+      - appId=cid-v1:0158d69b-75d9-4a19-9e5f-a14693f847e4
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '29'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=565
+      Expires:
+      - Tue, 26 Dec 2023 14:21:57 GMT
+      Akamai-Grn:
+      - 0.46ab3717.1703599952.3dafa0c1
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Faraday v2.8.1
+      X-Forwarded-For:
+      - 207.154.247.92
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2023-12-26T19:03:00+05:00","EpochTime":1703599380,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-5.4,"Unit":"C","UnitType":17},"Imperial":{"Value":22.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T17:58:00+05:00","EpochTime":1703595480,"WeatherText":"Heavy
+        snow","WeatherIcon":22,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":false,"Temperature":{"Metric":{"Value":-4.7,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T16:58:00+05:00","EpochTime":1703591880,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-5.2,"Unit":"C","UnitType":17},"Imperial":{"Value":23.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T15:57:00+05:00","EpochTime":1703588220,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-4.9,"Unit":"C","UnitType":17},"Imperial":{"Value":23.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T14:57:00+05:00","EpochTime":1703584620,"WeatherText":"Heavy
+        snow","WeatherIcon":22,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":true,"Temperature":{"Metric":{"Value":-4.7,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T14:02:00+05:00","EpochTime":1703581320,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-4.7,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T12:57:00+05:00","EpochTime":1703577420,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-4.6,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T11:58:00+05:00","EpochTime":1703573880,"WeatherText":"Snow","WeatherIcon":22,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":true,"Temperature":{"Metric":{"Value":-4.5,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T10:57:00+05:00","EpochTime":1703570220,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-4.4,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T09:58:00+05:00","EpochTime":1703566680,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":-4.4,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T08:57:00+05:00","EpochTime":1703563020,"WeatherText":"Heavy
+        snow","WeatherIcon":22,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":false,"Temperature":{"Metric":{"Value":-4.1,"Unit":"C","UnitType":17},"Imperial":{"Value":25.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T07:57:00+05:00","EpochTime":1703559420,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-2.2,"Unit":"C","UnitType":17},"Imperial":{"Value":28.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T06:58:00+05:00","EpochTime":1703555880,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-2.9,"Unit":"C","UnitType":17},"Imperial":{"Value":27.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T05:57:00+05:00","EpochTime":1703552220,"WeatherText":"Snow","WeatherIcon":22,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":false,"Temperature":{"Metric":{"Value":-3.4,"Unit":"C","UnitType":17},"Imperial":{"Value":26.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T04:57:00+05:00","EpochTime":1703548620,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-2.8,"Unit":"C","UnitType":17},"Imperial":{"Value":27.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T04:03:00+05:00","EpochTime":1703545380,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-2.8,"Unit":"C","UnitType":17},"Imperial":{"Value":27.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T02:58:00+05:00","EpochTime":1703541480,"WeatherText":"Snow","WeatherIcon":22,"HasPrecipitation":true,"PrecipitationType":"Snow","IsDayTime":false,"Temperature":{"Metric":{"Value":-3.1,"Unit":"C","UnitType":17},"Imperial":{"Value":26.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T01:58:00+05:00","EpochTime":1703537880,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-4.0,"Unit":"C","UnitType":17},"Imperial":{"Value":25.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T00:58:00+05:00","EpochTime":1703534280,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-3.5,"Unit":"C","UnitType":17},"Imperial":{"Value":26.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-26T00:03:00+05:00","EpochTime":1703530980,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-3.5,"Unit":"C","UnitType":17},"Imperial":{"Value":26.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-25T22:57:00+05:00","EpochTime":1703527020,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-4.2,"Unit":"C","UnitType":17},"Imperial":{"Value":24.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-25T21:58:00+05:00","EpochTime":1703523480,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-3.6,"Unit":"C","UnitType":17},"Imperial":{"Value":26.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-25T20:57:00+05:00","EpochTime":1703519820,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-2.6,"Unit":"C","UnitType":17},"Imperial":{"Value":27.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"},{"LocalObservationDateTime":"2023-12-25T19:58:00+05:00","EpochTime":1703516280,"WeatherText":"Mostly
+        cloudy","WeatherIcon":38,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":-4.1,"Unit":"C","UnitType":17},"Imperial":{"Value":25.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us","Link":"http://www.accuweather.com/en/ru/yekaterinburg/295863/current-weather/295863?lang=en-us"}]'
+  recorded_at: Tue, 26 Dec 2023 14:12:33 GMT
+recorded_with: VCR 6.2.0

@@ -9,6 +9,7 @@ A [Grape](http://github.com/ruby-grape/grape) API mounted on Rails.
 
 ```
 bin/setup
+rspec
 rails s
 rails jobs:work
 ```
